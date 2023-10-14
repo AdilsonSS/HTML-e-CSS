@@ -82,9 +82,9 @@ body {
     transform-style: preserve-3d;
     /* transition: transform 1.5s ease-in-out; */
     animation-name: flip;
-    animation-duration: 5s;
-    animation-delay: 20s;
-    animation-iteration-count: infinite;    
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
 }
 
 .box__front, .box__back { 
@@ -121,15 +121,15 @@ body {
 }
 
 @keyframes flip {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
     0% {
         transform: rotateY(0deg);
     }
     50%{
         transform: rotateY(180deg);
-    }
-    100%{
-        transform: rotateY(360deg);
     }
+    
+    
 }
 
 @media(max-width: 750px ) {
